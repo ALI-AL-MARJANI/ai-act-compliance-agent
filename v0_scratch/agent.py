@@ -127,7 +127,9 @@ def approve_in_terminal(arguments: dict) -> tuple[bool, str]:
     print("=" * 70)
     print(arguments["content_markdown"])
     print("=" * 70)
-    answer = input("Approve and save this report? (y/n): ").strip().lower()
+    answer = ""
+    while answer not in ("y", "n"):  # ask again on a typo or an empty line
+        answer = input("Approve and save this report? (y/n): ").strip().lower()
     if answer == "y":
         return True, ""
     return False, input("Why? (feedback for the agent): ")

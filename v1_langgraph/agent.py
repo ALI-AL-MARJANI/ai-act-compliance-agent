@@ -192,7 +192,9 @@ def approve_in_terminal(draft: dict) -> dict:
     print("=" * 70)
     print(draft["content_markdown"])
     print("=" * 70)
-    choice = input("Approve, edit or reject? (a/e/r): ").strip().lower()
+    choice = ""
+    while choice not in ("a", "e", "r"):  # ask again on a typo or an empty line
+        choice = input("Approve, edit or reject? (a/e/r): ").strip().lower()
     if choice == "a":
         return {"action": "approve"}
     if choice == "e":
