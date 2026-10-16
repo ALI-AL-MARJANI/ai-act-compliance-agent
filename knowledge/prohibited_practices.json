@@ -1,0 +1,105 @@
+{
+  "_note": "Article 5(1) AI Act, simplified. A practice is prohibited only if ALL its criteria are met and no exception applies. Not legal advice.",
+  "practices": [
+    {
+      "id": "5(1)(a)",
+      "name": "Harmful manipulation or deception",
+      "criteria": [
+        "uses subliminal techniques beyond a person's consciousness, or purposefully manipulative or deceptive techniques",
+        "with the objective or effect of materially distorting the behaviour of people by impairing their ability to make an informed decision",
+        "causing, or reasonably likely to cause, significant harm"
+      ],
+      "examples": ["an app using hidden audio cues to push users into gambling far beyond their means"]
+    },
+    {
+      "id": "5(1)(b)",
+      "name": "Exploitation of vulnerabilities",
+      "criteria": [
+        "exploits vulnerabilities of a person or group due to age, disability or a specific social or economic situation",
+        "with the objective or effect of materially distorting their behaviour",
+        "causing, or reasonably likely to cause, significant harm"
+      ],
+      "examples": ["a toy with a voice assistant encouraging children to do dangerous challenges"]
+    },
+    {
+      "id": "5(1)(c)",
+      "name": "Social scoring",
+      "criteria": [
+        "evaluates or classifies people over a period of time based on their social behaviour or known, inferred or predicted personal characteristics",
+        "the resulting score leads to detrimental treatment in social contexts unrelated to where the data was collected, OR to treatment that is unjustified or disproportionate to their behaviour"
+      ],
+      "examples": ["a city scoring residents on their online behaviour and restricting access to public housing for low scores"]
+    },
+    {
+      "id": "5(1)(d)",
+      "name": "Predicting criminal offences based solely on profiling",
+      "criteria": [
+        "assesses or predicts the risk that a person will commit a criminal offence",
+        "based solely on profiling or on assessing personality traits and characteristics"
+      ],
+      "exceptions": ["systems that support a human assessment of a person's involvement in a crime that is already based on objective and verifiable facts directly linked to a criminal activity"],
+      "examples": ["a tool predicting who will commit theft from their personality profile and neighbourhood"]
+    },
+    {
+      "id": "5(1)(e)",
+      "name": "Untargeted scraping of facial images",
+      "criteria": [
+        "creates or expands facial recognition databases",
+        "through untargeted scraping of facial images from the internet or CCTV footage"
+      ],
+      "examples": ["crawling social media photos to build a face search engine"]
+    },
+    {
+      "id": "5(1)(f)",
+      "name": "Emotion recognition at work or in education",
+      "criteria": [
+        "infers the emotions of a natural person",
+        "in the workplace or in education institutions"
+      ],
+      "exceptions": ["systems intended for medical or safety reasons (e.g. detecting a pilot's or driver's fatigue)"],
+      "examples": ["a webcam tool scoring employees' enthusiasm during video meetings"]
+    },
+    {
+      "id": "5(1)(g)",
+      "name": "Biometric categorisation inferring sensitive attributes",
+      "criteria": [
+        "categorises individual people based on their biometric data",
+        "to deduce or infer their race, political opinions, trade union membership, religious or philosophical beliefs, sex life or sexual orientation"
+      ],
+      "exceptions": ["labelling or filtering of lawfully acquired biometric datasets, or categorisation in the area of law enforcement"],
+      "examples": ["analysing face photos to infer sexual orientation"]
+    },
+    {
+      "id": "5(1)(h)",
+      "name": "Real-time remote biometric identification in public spaces for law enforcement",
+      "criteria": [
+        "real-time remote biometric identification (e.g. live facial recognition)",
+        "in publicly accessible spaces",
+        "for the purpose of law enforcement"
+      ],
+      "exceptions": ["strictly necessary for: the targeted search for victims of abduction, trafficking or sexual exploitation, or missing persons; preventing a specific, substantial and imminent threat to life or a genuine threat of a terrorist attack; locating or identifying suspects of serious crimes listed in Annex II. Requires prior authorisation and other safeguards (Art. 5(2)-(7))."],
+      "examples": ["police running live facial recognition on all cameras of a train station to find shoplifters"]
+    },
+    {
+      "id": "5(1)(ba)",
+      "name": "Non-consensual intimate or sexually explicit depictions",
+      "criteria": [
+        "generates or manipulates intimate or sexually explicit images, video or audio of an identifiable real person",
+        "without that person's consent",
+        "and this is the intended purpose, or a reasonably foreseeable outcome without adequate safeguards"
+      ],
+      "note": "Added by Regulation (EU) 2026/1744. See the timeline in SOURCES.md.",
+      "examples": ["a 'nudify' app that undresses photos of real people"]
+    },
+    {
+      "id": "5(1)(bb)",
+      "name": "Generation of child sexual abuse material",
+      "criteria": [
+        "generates child sexual abuse material",
+        "and this is the intended purpose, or a reasonably foreseeable outcome without adequate safeguards"
+      ],
+      "note": "Added by Regulation (EU) 2026/1744. See the timeline in SOURCES.md.",
+      "examples": ["an image generator without safeguards that reproducibly produces such material"]
+    }
+  ]
+}

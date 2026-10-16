@@ -1,0 +1,102 @@
+{
+  "_note": "Annex III AI Act (high-risk use cases), simplified. A system listed here is high-risk unless the Article 6(3) derogation applies (and never if it performs profiling of natural persons). Not legal advice.",
+  "areas": [
+    {
+      "point": "1",
+      "domain": "biometrics",
+      "name": "Biometrics (insofar as permitted by law)",
+      "keywords": ["biometric", "face", "facial recognition", "fingerprint", "voice", "emotion"],
+      "use_cases": [
+        "1(a) remote biometric identification systems (NOT biometric verification whose only purpose is to confirm that a person is who they claim to be)",
+        "1(b) biometric categorisation according to sensitive or protected attributes",
+        "1(c) emotion recognition systems"
+      ],
+      "examples": ["identifying people in a crowd from CCTV after the fact", "emotion recognition in a customer call centre"]
+    },
+    {
+      "point": "2",
+      "domain": "critical_infrastructure",
+      "name": "Critical infrastructure",
+      "keywords": ["critical infrastructure", "electricity", "water", "gas", "heating", "road traffic", "energy grid"],
+      "use_cases": [
+        "2 safety components in the management and operation of critical digital infrastructure, road traffic, or the supply of water, gas, heating or electricity"
+      ],
+      "examples": ["an AI system that controls valves in a water distribution network"]
+    },
+    {
+      "point": "3",
+      "domain": "education",
+      "name": "Education and vocational training",
+      "keywords": ["education", "school", "university", "student", "exam", "admission", "training"],
+      "use_cases": [
+        "3(a) determining access or admission, or assigning people to educational institutions",
+        "3(b) evaluating learning outcomes, including when used to steer the learning process",
+        "3(c) assessing the appropriate level of education a person will receive or can access",
+        "3(d) monitoring and detecting prohibited behaviour of students during tests"
+      ],
+      "examples": ["automated grading of exams", "proctoring software flagging cheating"]
+    },
+    {
+      "point": "4",
+      "domain": "employment",
+      "name": "Employment, workers management and access to self-employment",
+      "keywords": ["employment", "recruitment", "hiring", "cv", "candidate", "job", "employee", "worker", "promotion", "hr"],
+      "use_cases": [
+        "4(a) recruitment or selection: placing targeted job ads, analysing and filtering applications, evaluating candidates",
+        "4(b) decisions affecting work relationships (promotion, termination), allocating tasks based on behaviour or personal traits, monitoring and evaluating performance and behaviour of workers"
+      ],
+      "examples": ["CV screening and ranking", "an algorithm assigning shifts to delivery riders based on their ratings"]
+    },
+    {
+      "point": "5",
+      "domain": "essential_services",
+      "name": "Access to essential private and public services and benefits",
+      "keywords": ["credit", "loan", "creditworthiness", "credit score", "insurance", "benefits", "social security", "emergency", "triage", "healthcare"],
+      "use_cases": [
+        "5(a) public authorities evaluating eligibility for public assistance benefits and services (including healthcare), or granting, reducing or revoking them",
+        "5(b) evaluating creditworthiness or establishing a credit score (EXCEPT systems used to detect financial fraud)",
+        "5(c) risk assessment and pricing in life and health insurance",
+        "5(d) evaluating and classifying emergency calls, dispatching emergency services, emergency healthcare patient triage"
+      ],
+      "examples": ["a bank's loan approval model", "a tool prioritising emergency calls"]
+    },
+    {
+      "point": "6",
+      "domain": "law_enforcement",
+      "name": "Law enforcement (insofar as permitted by law)",
+      "keywords": ["police", "law enforcement", "crime", "criminal", "evidence", "investigation"],
+      "use_cases": [
+        "6(a) assessing the risk of a person becoming a victim of crime",
+        "6(b) polygraphs and similar tools",
+        "6(c) evaluating the reliability of evidence",
+        "6(d) assessing the risk of offending or re-offending not solely based on profiling, or assessing personality traits or past criminal behaviour",
+        "6(e) profiling of people during the detection, investigation or prosecution of crimes"
+      ],
+      "examples": ["a tool estimating the reliability of witness statements for police"]
+    },
+    {
+      "point": "7",
+      "domain": "migration",
+      "name": "Migration, asylum and border control management (insofar as permitted by law)",
+      "keywords": ["migration", "asylum", "visa", "border", "residence permit", "immigration"],
+      "use_cases": [
+        "7(a) polygraphs and similar tools",
+        "7(b) assessing security, irregular migration or health risks posed by a person entering a Member State",
+        "7(c) assisting the examination of applications for asylum, visas and residence permits, including the reliability of evidence",
+        "7(d) detecting, recognising or identifying people in this context (EXCEPT verification of travel documents)"
+      ],
+      "examples": ["a system scoring visa applications for risk"]
+    },
+    {
+      "point": "8",
+      "domain": "justice_democracy",
+      "name": "Administration of justice and democratic processes",
+      "keywords": ["court", "judge", "justice", "legal", "dispute resolution", "election", "voting", "referendum"],
+      "use_cases": [
+        "8(a) assisting a judicial authority (or alternative dispute resolution) in researching and interpreting facts and law, and applying the law to facts",
+        "8(b) influencing the outcome of an election or referendum or people's voting behaviour (EXCEPT tools whose output people are not directly exposed to, e.g. tools to organise campaigns logistically)"
+      ],
+      "examples": ["a tool suggesting sentences to judges", "micro-targeting political ads to change voting behaviour"]
+    }
+  ]
+}

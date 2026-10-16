@@ -1,0 +1,103 @@
+{
+  "_note": "Simplified summaries written for an educational prototype. Not legal advice. AI Act = Regulation (EU) 2024/1689 as amended by Regulation (EU) 2026/1744. GDPR = Regulation (EU) 2016/679. See SOURCES.md.",
+  "ai_act": {
+    "4": {
+      "title": "AI literacy",
+      "summary": "Providers and deployers of any AI system must take measures to support the AI literacy of their staff and other people operating the system on their behalf, taking into account their knowledge, the context of use and the people affected. Since the 2026 amendment, this does not require guaranteeing a specific literacy level for each individual."
+    },
+    "5": {
+      "title": "Prohibited AI practices",
+      "summary": "Bans a closed list of AI practices considered an unacceptable risk: harmful manipulation, exploitation of vulnerabilities, social scoring, predicting crimes based only on profiling, untargeted scraping of facial images, emotion recognition at work or in education, biometric categorisation inferring sensitive attributes, and real-time remote biometric identification in public spaces for law enforcement (with narrow exceptions). The 2026 amendment adds non-consensual intimate deepfakes and child sexual abuse material. See prohibited_practices.json for the criteria of each practice."
+    },
+    "6": {
+      "title": "Classification rules for high-risk AI systems",
+      "summary": "An AI system is high-risk if (1) it is a safety component of a product, or is itself a product, covered by EU harmonisation legislation listed in Annex I and requires third-party conformity assessment, or (2) it falls under one of the use cases listed in Annex III. Derogation (Art. 6(3)): an Annex III system is NOT high-risk if it does not pose a significant risk of harm and does not materially influence the outcome of decisions, e.g. it only performs a narrow procedural task, improves the result of a completed human activity, detects decision patterns without replacing human assessment, or performs a preparatory task. An Annex III system that performs profiling of natural persons is ALWAYS high-risk. A provider relying on the derogation must document its assessment."
+    },
+    "9": {
+      "title": "Risk management system",
+      "summary": "High-risk AI systems need a continuous, iterative risk management process over the whole lifecycle: identify and analyse known and foreseeable risks to health, safety and fundamental rights, estimate risks including reasonably foreseeable misuse, adopt risk mitigation measures, and test the system."
+    },
+    "10": {
+      "title": "Data and data governance",
+      "summary": "Training, validation and testing data sets of high-risk AI systems must follow data governance practices: relevant design choices, documented data collection and preparation, examination for possible biases that could affect health, safety or fundamental rights or lead to discrimination, and measures to detect, prevent and mitigate those biases. Data sets must be relevant, sufficiently representative and, as far as possible, free of errors and complete."
+    },
+    "11": {
+      "title": "Technical documentation",
+      "summary": "Before a high-risk AI system is placed on the market or put into service, the provider must draw up technical documentation (content listed in Annex IV) showing that the system meets the requirements, and keep it up to date."
+    },
+    "12": {
+      "title": "Record-keeping (logging)",
+      "summary": "High-risk AI systems must technically allow the automatic recording of events (logs) over their lifetime, to ensure traceability, identify risky situations and support post-market monitoring."
+    },
+    "13": {
+      "title": "Transparency and provision of information to deployers",
+      "summary": "High-risk AI systems must be transparent enough for deployers to interpret the output and use it appropriately. They come with instructions for use describing the provider, the intended purpose, the level of accuracy and robustness, known risks, human oversight measures and the logging mechanisms."
+    },
+    "14": {
+      "title": "Human oversight",
+      "summary": "High-risk AI systems must be designed so that natural persons can effectively oversee them while in use: understand the system's capacities and limits, stay aware of automation bias, correctly interpret the output, decide not to use it or override it, and interrupt the system (e.g. a stop button)."
+    },
+    "15": {
+      "title": "Accuracy, robustness and cybersecurity",
+      "summary": "High-risk AI systems must achieve an appropriate level of accuracy, robustness and cybersecurity throughout their lifecycle, be resilient to errors and to attempts by third parties to exploit vulnerabilities (e.g. data poisoning, adversarial examples), and declare their accuracy metrics in the instructions for use."
+    },
+    "17": {
+      "title": "Quality management system",
+      "summary": "Providers of high-risk AI systems must put in place a documented quality management system (policies, procedures, design and testing controls, data management, post-market monitoring, incident reporting, accountability)."
+    },
+    "26": {
+      "title": "Obligations of deployers of high-risk AI systems",
+      "summary": "Deployers must use the system according to the instructions for use, assign human oversight to competent, trained people, ensure input data is relevant, monitor the system and report serious incidents, keep automatically generated logs for at least six months, inform workers' representatives and affected workers before using a high-risk system at the workplace, and inform natural persons that they are subject to a high-risk AI system when it makes or assists decisions about them."
+    },
+    "27": {
+      "title": "Fundamental rights impact assessment (FRIA)",
+      "summary": "Before using certain high-risk AI systems, deployers that are public bodies or private entities providing public services, as well as deployers of credit scoring and life/health insurance pricing systems (Annex III points 5(b) and 5(c)), must assess the impact on fundamental rights: affected groups, specific risks of harm, human oversight measures and remedies. It can complement a GDPR DPIA."
+    },
+    "43": {
+      "title": "Conformity assessment",
+      "summary": "Providers of high-risk AI systems must carry out a conformity assessment before placing the system on the market. For most Annex III systems this is an internal control procedure (Annex VI); for some biometric systems a notified body may be required."
+    },
+    "49": {
+      "title": "Registration",
+      "summary": "Providers (and certain public-sector deployers) must register Annex III high-risk AI systems in the EU database before placing them on the market or using them. Providers who conclude under Article 6(3) that their Annex III system is not high-risk must also register it (the 2026 amendment simplifies the information required)."
+    },
+    "50": {
+      "title": "Transparency obligations for certain AI systems",
+      "summary": "(1) Providers must design AI systems that interact directly with people (e.g. chatbots) so that people are informed they are interacting with an AI, unless this is obvious. (2) Providers of systems generating synthetic audio, image, video or text must mark outputs in a machine-readable format so they are detectable as artificially generated. (3) Deployers of emotion recognition or biometric categorisation systems must inform the people exposed to them. (4) Deployers of deep fakes must disclose that the content is artificially generated or manipulated; the same applies to AI-generated text published to inform the public on matters of public interest, unless it underwent human review and editorial responsibility. The information must be clear and given at the latest at the first interaction or exposure."
+    },
+    "86": {
+      "title": "Right to explanation of individual decision-making",
+      "summary": "A person affected by a decision taken by a deployer on the basis of the output of an Annex III high-risk AI system, which produces legal or similarly significant effects, has the right to obtain a clear and meaningful explanation of the role of the AI system in the decision and of the main elements of the decision."
+    },
+    "95": {
+      "title": "Codes of conduct for voluntary application",
+      "summary": "Providers and deployers of AI systems that are not high-risk are encouraged to voluntarily apply some or all of the high-risk requirements, or other commitments (e.g. environmental sustainability, accessibility, diversity of development teams), through codes of conduct."
+    },
+    "99": {
+      "title": "Penalties",
+      "summary": "Member States set penalties. Non-compliance with the prohibitions of Article 5 can be fined up to EUR 35 million or 7% of total worldwide annual turnover, whichever is higher. Most other infringements (e.g. high-risk or transparency obligations) up to EUR 15 million or 3%. Lower caps apply to SMEs."
+    }
+  },
+  "gdpr": {
+    "5": {
+      "title": "Principles relating to processing of personal data",
+      "summary": "Personal data must be processed lawfully, fairly and transparently; collected for specified, explicit and legitimate purposes (purpose limitation); adequate and limited to what is necessary (data minimisation); accurate; kept no longer than necessary (storage limitation); and secured (integrity and confidentiality). The controller must be able to demonstrate compliance (accountability)."
+    },
+    "6": {
+      "title": "Lawfulness of processing",
+      "summary": "Processing is lawful only if at least one legal basis applies: consent, performance of a contract, legal obligation, vital interests, public interest task or official authority, or legitimate interests of the controller (balanced against the rights of the data subject; not available to public authorities performing their tasks)."
+    },
+    "9": {
+      "title": "Processing of special categories of personal data",
+      "summary": "Processing of data revealing racial or ethnic origin, political opinions, religious or philosophical beliefs, trade union membership, genetic data, biometric data used to uniquely identify a person, health data, or data on sex life or sexual orientation is prohibited, unless a specific exception of Art. 9(2) applies (e.g. explicit consent, obligations in employment and social security law, vital interests, substantial public interest based on law, health care)."
+    },
+    "22": {
+      "title": "Automated individual decision-making, including profiling",
+      "summary": "A person has the right not to be subject to a decision based solely on automated processing, including profiling, which produces legal effects or similarly significantly affects them. Exceptions: necessary for a contract, authorised by EU or Member State law, or based on explicit consent. In the contract and consent cases, the controller must provide safeguards, at least the right to obtain human intervention, to express one's point of view and to contest the decision. Such decisions must not be based on special category data unless explicit consent or substantial public interest applies with safeguards."
+    },
+    "35": {
+      "title": "Data protection impact assessment (DPIA)",
+      "summary": "When processing, in particular using new technologies, is likely to result in a high risk to people's rights and freedoms, the controller must carry out a DPIA before processing. It is required in particular for (a) systematic and extensive evaluation of personal aspects based on automated processing, including profiling, that leads to decisions with legal or similarly significant effects, (b) large-scale processing of special categories of data, (c) systematic monitoring of a publicly accessible area on a large scale. The DPIA describes the processing, assesses necessity and proportionality, the risks, and the mitigation measures."
+    }
+  }
+}
