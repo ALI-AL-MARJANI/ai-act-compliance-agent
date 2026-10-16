@@ -1,0 +1,185 @@
+{
+  "_note": "25 SYNTHETIC use cases written for this educational project. Gold labels are a simplified reading of the AI Act and GDPR, not legal advice and not reviewed by a lawyer. gold_articles = the AI Act article(s) that justify the classification (Art. 5, 6 or 50). gdpr_flags in {personal_data, special_categories, automated_decision, dpia}. If incomplete=true, the description alone is not enough: the agent should call ask_user, and receives hidden_facts as the answer.",
+  "cases": [
+    {
+      "id": "P1", "difficulty": "easy", "incomplete": false,
+      "description": "A city council app that scores residents from their social media posts, unpaid fines and complaints from neighbours. The score automatically decides who can access public housing and some municipal services.",
+      "risk_category": "prohibited", "gold_articles": ["AI Act Art. 5"],
+      "gdpr_flags": ["personal_data", "automated_decision", "dpia"], "hidden_facts": []
+    },
+    {
+      "id": "P2", "difficulty": "easy", "incomplete": false,
+      "description": "Workplace software that uses employees' webcams during video meetings to detect their emotions (happiness, boredom, frustration) and sends an engagement score for each employee to their manager.",
+      "risk_category": "prohibited", "gold_articles": ["AI Act Art. 5"],
+      "gdpr_flags": ["personal_data", "dpia"], "hidden_facts": []
+    },
+    {
+      "id": "P3", "difficulty": "medium", "incomplete": false,
+      "description": "A web crawler that collects photos of faces from public social media profiles and adds them to a database, which is used to sell a face search service: upload a photo, get the person's profiles.",
+      "risk_category": "prohibited", "gold_articles": ["AI Act Art. 5"],
+      "gdpr_flags": ["personal_data", "special_categories", "dpia"], "hidden_facts": []
+    },
+    {
+      "id": "P4", "difficulty": "medium", "incomplete": false,
+      "description": "A tool sold to retail chains that predicts which customers are likely to commit shoplifting, based only on their personality profile and demographic features, and puts them on a watch list shared with security guards. There is no link to any actual incident.",
+      "risk_category": "prohibited", "gold_articles": ["AI Act Art. 5"],
+      "gdpr_flags": ["personal_data", "dpia"], "hidden_facts": []
+    },
+    {
+      "id": "P5", "difficulty": "hard", "incomplete": true,
+      "description": "A mobile game for children with a built-in AI voice assistant that talks with the players.",
+      "risk_category": "prohibited", "gold_articles": ["AI Act Art. 5"],
+      "gdpr_flags": ["personal_data"],
+      "hidden_facts": [
+        "The assistant is designed to push children to buy in-game items: it tells them their friends will stop playing with them if they don't buy, and uses countdown pressure.",
+        "Several parents reported children spending hundreds of euros without understanding it."
+      ]
+    },
+    {
+      "id": "P6", "difficulty": "hard", "incomplete": false,
+      "description": "An HR analytics app that analyses employees' profile photos to infer their sexual orientation and political opinions, in order to produce 'team diversity statistics' for management.",
+      "risk_category": "prohibited", "gold_articles": ["AI Act Art. 5"],
+      "gdpr_flags": ["personal_data", "special_categories", "dpia"], "hidden_facts": []
+    },
+    {
+      "id": "H1", "difficulty": "easy", "incomplete": false,
+      "description": "A bank's machine learning model that evaluates the creditworthiness of loan applicants from their income, debts and payment history, and automatically approves or refuses consumer loans.",
+      "risk_category": "high_risk", "gold_articles": ["AI Act Art. 6"],
+      "gdpr_flags": ["personal_data", "automated_decision", "dpia"], "hidden_facts": []
+    },
+    {
+      "id": "H2", "difficulty": "easy", "incomplete": false,
+      "description": "A university system that automatically grades students' written exams. The grades count toward their final diploma and are not reviewed by a teacher.",
+      "risk_category": "high_risk", "gold_articles": ["AI Act Art. 6"],
+      "gdpr_flags": ["personal_data", "automated_decision"], "hidden_facts": []
+    },
+    {
+      "id": "H3", "difficulty": "medium", "incomplete": false,
+      "description": "Software used by a logistics company to monitor warehouse workers' productivity through handheld scanners. It automatically assigns shifts and flags low performers to be considered for termination.",
+      "risk_category": "high_risk", "gold_articles": ["AI Act Art. 6"],
+      "gdpr_flags": ["personal_data", "automated_decision", "dpia"], "hidden_facts": []
+    },
+    {
+      "id": "H4", "difficulty": "medium", "incomplete": false,
+      "description": "An AI system used by a public employment agency to decide whether unemployed people remain eligible for unemployment benefits, based on their job search activity.",
+      "risk_category": "high_risk", "gold_articles": ["AI Act Art. 6"],
+      "gdpr_flags": ["personal_data", "automated_decision", "dpia"], "hidden_facts": []
+    },
+    {
+      "id": "H5", "difficulty": "hard", "incomplete": true,
+      "description": "A system that analyses video recordings of job interviews and produces a report for recruiters.",
+      "risk_category": "high_risk", "gold_articles": ["AI Act Art. 6"],
+      "gdpr_flags": ["personal_data", "dpia"],
+      "hidden_facts": [
+        "It transcribes the interview and scores each candidate's answers. Recruiters use the score to decide who goes to the next round.",
+        "It does not analyse faces or emotions, only the transcript."
+      ]
+    },
+    {
+      "id": "H6", "difficulty": "hard", "incomplete": true,
+      "description": "An AI tool used in a hospital emergency department.",
+      "risk_category": "high_risk", "gold_articles": ["AI Act Art. 6"],
+      "gdpr_flags": ["personal_data", "special_categories", "dpia"],
+      "hidden_facts": [
+        "It reads each patient's symptoms and vital signs at arrival and assigns a triage priority level that determines how quickly they are seen.",
+        "Nurses can override the priority but rarely do."
+      ]
+    },
+    {
+      "id": "H7", "difficulty": "hard", "incomplete": false,
+      "description": "Proctoring software for online university exams that uses the student's webcam to detect suspicious behaviour (looking away, another person in the room) and flags possible cheaters to the examiners.",
+      "risk_category": "high_risk", "gold_articles": ["AI Act Art. 6"],
+      "gdpr_flags": ["personal_data", "dpia"], "hidden_facts": []
+    },
+    {
+      "id": "H8", "difficulty": "hard", "incomplete": false,
+      "description": "A call centre system that analyses customers' voices during calls to detect their emotional state (angry, calm, stressed) and shows it to the call centre agent so they can adapt their tone. It does not identify customers and takes no decision.",
+      "risk_category": "high_risk", "gold_articles": ["AI Act Art. 6", "AI Act Art. 50"],
+      "gdpr_flags": ["personal_data", "dpia"], "hidden_facts": []
+    },
+    {
+      "id": "L1", "difficulty": "easy", "incomplete": false,
+      "description": "An AI chatbot on a telecom operator's website that answers visitors' general questions about mobile plans and prices. It does not access customer accounts and takes no decision.",
+      "risk_category": "limited_risk", "gold_articles": ["AI Act Art. 50"],
+      "gdpr_flags": [], "hidden_facts": []
+    },
+    {
+      "id": "L2", "difficulty": "easy", "incomplete": false,
+      "description": "An image generator that creates marketing pictures from text prompts for a fashion brand's social media accounts.",
+      "risk_category": "limited_risk", "gold_articles": ["AI Act Art. 50"],
+      "gdpr_flags": [], "hidden_facts": []
+    },
+    {
+      "id": "L3", "difficulty": "medium", "incomplete": false,
+      "description": "A tool that creates realistic videos of a company's CEO giving speeches in languages the CEO does not speak, by cloning the CEO's face and voice (with the CEO's consent). The videos are published on the company's YouTube channel.",
+      "risk_category": "limited_risk", "gold_articles": ["AI Act Art. 50"],
+      "gdpr_flags": ["personal_data"], "hidden_facts": []
+    },
+    {
+      "id": "L4", "difficulty": "medium", "incomplete": false,
+      "description": "A local news website uses an AI model to write short articles about local sports results. The articles are published automatically, without any editor reviewing them.",
+      "risk_category": "limited_risk", "gold_articles": ["AI Act Art. 50"],
+      "gdpr_flags": [], "hidden_facts": []
+    },
+    {
+      "id": "L5", "difficulty": "hard", "incomplete": true,
+      "description": "A software that helps a school's teachers.",
+      "risk_category": "limited_risk", "gold_articles": ["AI Act Art. 50"],
+      "gdpr_flags": [],
+      "hidden_facts": [
+        "It generates quiz questions and lesson summaries from the textbook chapters.",
+        "It does not grade students, does not monitor them and does not decide anything about them. It does not process students' data."
+      ]
+    },
+    {
+      "id": "L6", "difficulty": "hard", "incomplete": false,
+      "description": "A beauty filter app that lets users change their face and body in selfies and videos in real time, with a realistic result, before sharing them on social networks.",
+      "risk_category": "limited_risk", "gold_articles": ["AI Act Art. 50"],
+      "gdpr_flags": ["personal_data"], "hidden_facts": []
+    },
+    {
+      "id": "M1", "difficulty": "easy", "incomplete": false,
+      "description": "A spam filter on a company's email server that moves unwanted emails to a spam folder.",
+      "risk_category": "minimal_risk", "gold_articles": [],
+      "gdpr_flags": ["personal_data"], "hidden_facts": []
+    },
+    {
+      "id": "M2", "difficulty": "easy", "incomplete": false,
+      "description": "An AI system that optimises the stock of a warehouse by forecasting product demand from past sales figures.",
+      "risk_category": "minimal_risk", "gold_articles": [],
+      "gdpr_flags": [], "hidden_facts": []
+    },
+    {
+      "id": "M3", "difficulty": "medium", "incomplete": false,
+      "description": "A video game where enemy characters are controlled by a reinforcement learning agent that adapts its strategy to the player's skill level.",
+      "risk_category": "minimal_risk", "gold_articles": [],
+      "gdpr_flags": [], "hidden_facts": []
+    },
+    {
+      "id": "M4", "difficulty": "medium", "incomplete": false,
+      "description": "A predictive maintenance model that analyses vibration sensor data from factory machines to predict failures and schedule maintenance. It is not part of any safety function of the machines.",
+      "risk_category": "minimal_risk", "gold_articles": [],
+      "gdpr_flags": [], "hidden_facts": []
+    },
+    {
+      "id": "M5", "difficulty": "hard", "incomplete": true,
+      "description": "An AI tool used by an HR department.",
+      "risk_category": "minimal_risk", "gold_articles": [],
+      "gdpr_flags": [],
+      "hidden_facts": [
+        "It sorts incoming internal policy documents into folders by topic (benefits, leave, training).",
+        "It does not process data about candidates or employees and does not decide anything about people."
+      ]
+    },
+    {
+      "id": "M6", "difficulty": "hard", "incomplete": true,
+      "description": "A camera system in a supermarket.",
+      "risk_category": "minimal_risk", "gold_articles": [],
+      "gdpr_flags": ["personal_data"],
+      "hidden_facts": [
+        "It counts how many people enter per hour to plan staffing.",
+        "It only detects silhouettes: it does not identify or recognise anyone, does not analyse faces or emotions, and stores no images."
+      ]
+    }
+  ]
+}
