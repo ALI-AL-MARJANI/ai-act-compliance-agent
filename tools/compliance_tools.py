@@ -11,6 +11,9 @@ Design rules for every tool:
    The agent sends this error back to the LLM as an observation, so the LLM
    can fix its call and try again (self-correction).
 3. Tools return plain dicts (easy to turn into JSON for the LLM).
+4. Type hints use Literal for the allowed values: the MCP server (v2) turns
+   them into the JSON schema it publishes. Python itself does not enforce them,
+   so the pydantic validation inside each tool is still needed.
 """
 
 import json
@@ -176,7 +179,7 @@ def check_high_risk_areas(domain: str) -> dict:
 # ---------------------------------------------------------------------------
 # Tool 3 — one article summary
 # ---------------------------------------------------------------------------
-def get_article(regulation: str, article: str) -> dict:
+def get_article(regulation: Literal["ai_act", "gdpr"], article: str) -> dict:
     """Return the summary of one article of the AI Act or the GDPR."""
     args, error = _validate(GetArticleArgs, regulation=regulation, article=article)
     if error:
@@ -196,7 +199,7 @@ def get_article(regulation: str, article: str) -> dict:
 # ---------------------------------------------------------------------------
 # Tool 4 — obligations for a risk category
 # ---------------------------------------------------------------------------
-def get_obligations(risk_category: str) -> dict:
+def get_obligations(risk_category: RiskCategory) -> dict:
     """Return the main obligations for a risk category, with article references."""
     args, error = _validate(GetObligationsArgs, risk_category=risk_category)
     if error:
@@ -296,7 +299,7 @@ def validate_report(title: str, risk_category: str, content_markdown: str) -> di
     return None
 
 
-def save_report(title: str, risk_category: str, content_markdown: str) -> dict:
+def save_report(title: str, risk_category: RiskCategory, content_markdown: str) -> dict:
     """Write the report to reports/. Human approval is handled by the agent, not here."""
     error = validate_report(title, risk_category, content_markdown)
     if error:
