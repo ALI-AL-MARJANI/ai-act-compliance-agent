@@ -1,0 +1,10 @@
+# Versions actually installed and tested (Python 3.12)
+ollama==0.6.3                 # v0: plain Ollama client
+langgraph==1.2.15             # v1/v2: graph, checkpointer, interrupt
+langchain-core==1.6.11
+langchain-ollama==1.1.0       # v1/v2: ChatOllama with tool calling
+mcp==1.30.0                   # v2: official MCP SDK (FastMCP server)
+langchain-mcp-adapters==0.3.2 # v2: load MCP tools as LangChain tools
+pydantic==2.14.1              # tool argument validation
+pytest==9.1.1                 # tests
+scikit-learn==1.9.1           # eval metrics only

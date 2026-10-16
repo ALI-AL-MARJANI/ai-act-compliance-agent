@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Virtual environment
+.venv/
+
+# Generated compliance reports (never commit them)
+reports/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
