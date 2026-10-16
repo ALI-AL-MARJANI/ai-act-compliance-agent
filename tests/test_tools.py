@@ -73,6 +73,10 @@ def test_get_article_accepts_messy_number():
     assert ct.get_article("ai_act", "Article 6(3)")["citation"] == "[AI Act Art. 6]"
 
 
+def test_get_article_refuses_several_articles():
+    assert "ONE article per call" in ct.get_article("gdpr", "5,6,9,22")["error"]
+
+
 def test_get_article_unknown_article():
     result = ct.get_article("ai_act", "999")
     assert "not in the knowledge base" in result["error"]
@@ -131,6 +135,11 @@ def test_save_report_without_citation_refused():
 
 def test_save_report_without_disclaimer_refused():
     content = GOOD_REPORT.replace(ct.DISCLAIMER, "")
+    assert "disclaimer" in ct.save_report("CV tool", "high_risk", content)["error"]
+
+
+def test_save_report_disclaimer_at_the_end_refused():
+    content = GOOD_REPORT.replace(ct.DISCLAIMER, "") + "\n" + "x" * 400 + "\n" + ct.DISCLAIMER
     assert "disclaimer" in ct.save_report("CV tool", "high_risk", content)["error"]
 
 

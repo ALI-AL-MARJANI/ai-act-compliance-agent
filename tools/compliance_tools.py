@@ -82,6 +82,9 @@ class GetArticleArgs(BaseModel):
     @field_validator("article")
     @classmethod
     def keep_number_only(cls, value: str) -> str:
+        # Refuse several articles at once ("5,6,9"): silently keeping one would mislead the LLM.
+        if re.search(r"\d+\s*(,|;|\band\b)\s*\d+", value):
+            raise ValueError("ask for ONE article per call, e.g. '22'")
         # Small models often send "Article 22" or "22(1)": keep only "22".
         match = re.search(r"\d+", value)
         if not match:
@@ -161,7 +164,12 @@ def check_high_risk_areas(domain: str) -> dict:
         }
     return {
         "matches": matches,
-        "reminder": ARTICLES["ai_act"]["6"]["summary"],
+        "decision_rule": (
+            "If the system does one of the use cases above, its category is high_risk "
+            "(skip the transparency step). The Article 6(3) exception NEVER applies if the "
+            "system profiles, ranks or scores people, or makes or replaces a decision about them."
+        ),
+        "article_6": ARTICLES["ai_act"]["6"]["summary"],
     }
 
 
@@ -264,8 +272,9 @@ def validate_report(title: str, risk_category: str, content_markdown: str) -> di
         return error
     content = args.content_markdown
 
-    if "not legal advice" not in content.lower():
-        return {"error": f"The report must start with the disclaimer: '{DISCLAIMER}'"}
+    # The disclaimer must be at the TOP of the report (in the first lines), not hidden at the end.
+    if "not legal advice" not in content[:400].lower():
+        return {"error": f"The report must START with this exact disclaimer line: '{DISCLAIMER}'"}
 
     citations = CITATION_PATTERN.findall(content)
     if not citations:
