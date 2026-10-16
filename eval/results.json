@@ -1,0 +1,2128 @@
+{
+  "model": "qwen2.5:7b",
+  "date": "2026-10-16T21:25:15",
+  "n_cases": 26,
+  "rows": {
+    "v0": [
+      {
+        "id": "P1",
+        "difficulty": "easy",
+        "incomplete": false,
+        "gold": "prohibited",
+        "pred": "minimal_risk",
+        "citations": [
+          "AI Act Art. 50",
+          "GDPR Art. 22",
+          "GDPR Art. 5",
+          "GDPR Art. 6",
+          "GDPR Art. 9"
+        ],
+        "gold_articles": [
+          "AI Act Art. 5"
+        ],
+        "pred_articles": [
+          "AI Act Art. 50"
+        ],
+        "gold_flags": [
+          "personal_data",
+          "automated_decision",
+          "dpia"
+        ],
+        "pred_flags": [
+          "automated_decision",
+          "personal_data",
+          "special_categories"
+        ],
+        "questions": 0,
+        "asked_before_conclusion": false,
+        "hallucinated_in_report": [],
+        "hallucinations_caught": 0,
+        "steps": 6,
+        "tool_calls": 4,
+        "tool_errors": 0,
+        "self_corrections": 0,
+        "nudges": 1,
+        "stopped_by": "final_answer",
+        "latency_s": 64.4
+      },
+      {
+        "id": "P2",
+        "difficulty": "easy",
+        "incomplete": false,
+        "gold": "prohibited",
+        "pred": "high_risk",
+        "citations": [
+          "AI Act Art. 10",
+          "AI Act Art. 11",
+          "AI Act Art. 12",
+          "AI Act Art. 13",
+          "AI Act Art. 14",
+          "AI Act Art. 15",
+          "AI Act Art. 17",
+          "AI Act Art. 26",
+          "AI Act Art. 27",
+          "AI Act Art. 5",
+          "AI Act Art. 86",
+          "AI Act Art. 9",
+          "GDPR Art. 22",
+          "GDPR Art. 5",
+          "GDPR Art. 6",
+          "GDPR Art. 9"
+        ],
+        "gold_articles": [
+          "AI Act Art. 5"
+        ],
+        "pred_articles": [
+          "AI Act Art. 5"
+        ],
+        "gold_flags": [
+          "personal_data",
+          "dpia"
+        ],
+        "pred_flags": [
+          "automated_decision",
+          "personal_data",
+          "special_categories"
+        ],
+        "questions": 0,
+        "asked_before_conclusion": false,
+        "hallucinated_in_report": [],
+        "hallucinations_caught": 0,
+        "steps": 7,
+        "tool_calls": 5,
+        "tool_errors": 0,
+        "self_corrections": 0,
+        "nudges": 1,
+        "stopped_by": "final_answer",
+        "latency_s": 121.1
+      },
+      {
+        "id": "P3",
+        "difficulty": "medium",
+        "incomplete": false,
+        "gold": "prohibited",
+        "pred": "prohibited",
+        "citations": [
+          "AI Act Art. 5",
+          "AI Act Art. 99"
+        ],
+        "gold_articles": [
+          "AI Act Art. 5"
+        ],
+        "pred_articles": [
+          "AI Act Art. 5"
+        ],
+        "gold_flags": [
+          "personal_data",
+          "special_categories",
+          "dpia"
+        ],
+        "pred_flags": [],
+        "questions": 0,
+        "asked_before_conclusion": false,
+        "hallucinated_in_report": [],
+        "hallucinations_caught": 0,
+        "steps": 6,
+        "tool_calls": 4,
+        "tool_errors": 0,
+        "self_corrections": 0,
+        "nudges": 1,
+        "stopped_by": "final_answer",
+        "latency_s": 48.5
+      },
+      {
+        "id": "P4",
+        "difficulty": "medium",
+        "incomplete": false,
+        "gold": "prohibited",
+        "pred": "prohibited",
+        "citations": [
+          "AI Act Art. 5",
+          "AI Act Art. 99"
+        ],
+        "gold_articles": [
+          "AI Act Art. 5"
+        ],
+        "pred_articles": [
+          "AI Act Art. 5"
+        ],
+        "gold_flags": [
+          "personal_data",
+          "dpia"
+        ],
+        "pred_flags": [],
+        "questions": 0,
+        "asked_before_conclusion": false,
+        "hallucinated_in_report": [],
+        "hallucinations_caught": 0,
+        "steps": 6,
+        "tool_calls": 4,
+        "tool_errors": 0,
+        "self_corrections": 0,
+        "nudges": 1,
+        "stopped_by": "final_answer",
+        "latency_s": 50.9
+      },
+      {
+        "id": "P5",
+        "difficulty": "hard",
+        "incomplete": true,
+        "gold": "prohibited",
+        "pred": "limited_risk",
+        "citations": [
+          "GDPR Art. 5",
+          "GDPR Art. 6"
+        ],
+        "gold_articles": [
+          "AI Act Art. 5"
+        ],
+        "pred_articles": [],
+        "gold_flags": [
+          "personal_data"
+        ],
+        "pred_flags": [
+          "personal_data"
+        ],
+        "questions": 0,
+        "asked_before_conclusion": false,
+        "hallucinated_in_report": [],
+        "hallucinations_caught": 1,
+        "steps": 6,
+        "tool_calls": 4,
+        "tool_errors": 1,
+        "self_corrections": 1,
+        "nudges": 1,
+        "stopped_by": "final_answer",
+        "latency_s": 111.9
+      },
+      {
+        "id": "P6",
+        "difficulty": "hard",
+        "incomplete": false,
+        "gold": "prohibited",
+        "pred": "high_risk",
+        "citations": [
+          "AI Act Art. 5",
+          "AI Act Art. 6",
+          "GDPR Art. 22",
+          "GDPR Art. 9"
+        ],
+        "gold_articles": [
+          "AI Act Art. 5"
+        ],
+        "pred_articles": [
+          "AI Act Art. 5",
+          "AI Act Art. 6"
+        ],
+        "gold_flags": [
+          "personal_data",
+          "special_categories",
+          "dpia"
+        ],
+        "pred_flags": [
+          "automated_decision",
+          "special_categories"
+        ],
+        "questions": 0,
+        "asked_before_conclusion": false,
+        "hallucinated_in_report": [],
+        "hallucinations_caught": 0,
+        "steps": 7,
+        "tool_calls": 5,
+        "tool_errors": 1,
+        "self_corrections": 1,
+        "nudges": 1,
+        "stopped_by": "final_answer",
+        "latency_s": 80.3
+      },
+      {
+        "id": "H1",
+        "difficulty": "easy",
+        "incomplete": false,
+        "gold": "high_risk",
+        "pred": "no_report",
+        "citations": [],
+        "gold_articles": [
+          "AI Act Art. 6"
+        ],
+        "pred_articles": [],
+        "gold_flags": [
+          "personal_data",
+          "automated_decision",
+          "dpia"
+        ],
+        "pred_flags": [],
+        "questions": 0,
+        "asked_before_conclusion": false,
+        "hallucinated_in_report": [],
+        "hallucinations_caught": 0,
+        "steps": 7,
+        "tool_calls": 4,
+        "tool_errors": 0,
+        "self_corrections": 0,
+        "nudges": 2,
+        "stopped_by": "final_answer",
+        "latency_s": 238.4
+      },
+      {
+        "id": "H2",
+        "difficulty": "easy",
+        "incomplete": false,
+        "gold": "high_risk",
+        "pred": "high_risk",
+        "citations": [
+          "AI Act Art. 10",
+          "AI Act Art. 11",
+          "AI Act Art. 12",
+          "AI Act Art. 13",
+          "AI Act Art. 14",
+          "AI Act Art. 15",
+          "AI Act Art. 17",
+          "AI Act Art. 26",
+          "AI Act Art. 27",
+          "AI Act Art. 4",
+          "AI Act Art. 43",
+          "AI Act Art. 49",
+          "AI Act Art. 6",
+          "AI Act Art. 86",
+          "AI Act Art. 9",
+          "GDPR Art. 22",
+          "GDPR Art. 5",
+          "GDPR Art. 9"
+        ],
+        "gold_articles": [
+          "AI Act Art. 6"
+        ],
+        "pred_articles": [
+          "AI Act Art. 6"
+        ],
+        "gold_flags": [
+          "personal_data",
+          "automated_decision"
+        ],
+        "pred_flags": [
+          "automated_decision",
+          "personal_data",
+          "special_categories"
+        ],
+        "questions": 0,
+        "asked_before_conclusion": false,
+        "hallucinated_in_report": [],
+        "hallucinations_caught": 0,
+        "steps": 6,
+        "tool_calls": 4,
+        "tool_errors": 0,
+        "self_corrections": 0,
+        "nudges": 1,
+        "stopped_by": "final_answer",
+        "latency_s": 177.3
+      },
+      {
+        "id": "H3",
+        "difficulty": "medium",
+        "incomplete": false,
+        "gold": "high_risk",
+        "pred": "high_risk",
+        "citations": [
+          "AI Act Art. 10",
+          "AI Act Art. 11",
+          "AI Act Art. 12",
+          "AI Act Art. 13",
+          "AI Act Art. 14",
+          "AI Act Art. 15",
+          "AI Act Art. 17",
+          "AI Act Art. 26",
+          "AI Act Art. 27",
+          "AI Act Art. 4",
+          "AI Act Art. 43",
+          "AI Act Art. 49",
+          "AI Act Art. 6",
+          "AI Act Art. 86",
+          "AI Act Art. 9",
+          "GDPR Art. 5"
+        ],
+        "gold_articles": [
+          "AI Act Art. 6"
+        ],
+        "pred_articles": [
+          "AI Act Art. 6"
+        ],
+        "gold_flags": [
+          "personal_data",
+          "automated_decision",
+          "dpia"
+        ],
+        "pred_flags": [
+          "personal_data"
+        ],
+        "questions": 0,
+        "asked_before_conclusion": false,
+        "hallucinated_in_report": [],
+        "hallucinations_caught": 0,
+        "steps": 6,
+        "tool_calls": 4,
+        "tool_errors": 0,
+        "self_corrections": 0,
+        "nudges": 1,
+        "stopped_by": "final_answer",
+        "latency_s": 202.8
+      },
+      {
+        "id": "H4",
+        "difficulty": "medium",
+        "incomplete": false,
+        "gold": "high_risk",
+        "pred": "high_risk",
+        "citations": [
+          "AI Act Art. 10",
+          "AI Act Art. 11",
+          "AI Act Art. 12",
+          "AI Act Art. 13",
+          "AI Act Art. 14",
+          "AI Act Art. 15",
+          "AI Act Art. 17",
+          "AI Act Art. 26",
+          "AI Act Art. 27",
+          "AI Act Art. 43",
+          "AI Act Art. 49",
+          "AI Act Art. 6",
+          "AI Act Art. 86",
+          "AI Act Art. 9",
+          "GDPR Art. 5",
+          "GDPR Art. 6"
+        ],
+        "gold_articles": [
+          "AI Act Art. 6"
+        ],
+        "pred_articles": [
+          "AI Act Art. 6"
+        ],
+        "gold_flags": [
+          "personal_data",
+          "automated_decision",
+          "dpia"
+        ],
+        "pred_flags": [
+          "personal_data"
+        ],
+        "questions": 0,
+        "asked_before_conclusion": false,
+        "hallucinated_in_report": [],
+        "hallucinations_caught": 0,
+        "steps": 5,
+        "tool_calls": 4,
+        "tool_errors": 0,
+        "self_corrections": 0,
+        "nudges": 0,
+        "stopped_by": "final_answer",
+        "latency_s": 138.0
+      },
+      {
+        "id": "H5",
+        "difficulty": "hard",
+        "incomplete": true,
+        "gold": "high_risk",
+        "pred": "high_risk",
+        "citations": [
+          "AI Act Art. 10",
+          "AI Act Art. 11",
+          "AI Act Art. 12",
+          "AI Act Art. 13",
+          "AI Act Art. 14",
+          "AI Act Art. 15",
+          "AI Act Art. 17",
+          "AI Act Art. 26",
+          "AI Act Art. 27",
+          "AI Act Art. 4",
+          "AI Act Art. 43",
+          "AI Act Art. 49",
+          "AI Act Art. 6",
+          "AI Act Art. 86",
+          "AI Act Art. 9",
+          "GDPR Art. 22",
+          "GDPR Art. 5",
+          "GDPR Art. 9"
+        ],
+        "gold_articles": [
+          "AI Act Art. 6"
+        ],
+        "pred_articles": [
+          "AI Act Art. 6"
+        ],
+        "gold_flags": [
+          "personal_data",
+          "dpia"
+        ],
+        "pred_flags": [
+          "automated_decision",
+          "personal_data",
+          "special_categories"
+        ],
+        "questions": 0,
+        "asked_before_conclusion": false,
+        "hallucinated_in_report": [],
+        "hallucinations_caught": 0,
+        "steps": 7,
+        "tool_calls": 5,
+        "tool_errors": 1,
+        "self_corrections": 1,
+        "nudges": 1,
+        "stopped_by": "final_answer",
+        "latency_s": 158.6
+      },
+      {
+        "id": "H6",
+        "difficulty": "hard",
+        "incomplete": true,
+        "gold": "high_risk",
+        "pred": "minimal_risk",
+        "citations": [
+          "AI Act Art. 4",
+          "AI Act Art. 95",
+          "GDPR Art. 22",
+          "GDPR Art. 5",
+          "GDPR Art. 6",
+          "GDPR Art. 9"
+        ],
+        "gold_articles": [
+          "AI Act Art. 6"
+        ],
+        "pred_articles": [],
+        "gold_flags": [
+          "personal_data",
+          "special_categories",
+          "dpia"
+        ],
+        "pred_flags": [
+          "automated_decision",
+          "personal_data",
+          "special_categories"
+        ],
+        "questions": 0,
+        "asked_before_conclusion": false,
+        "hallucinated_in_report": [],
+        "hallucinations_caught": 0,
+        "steps": 6,
+        "tool_calls": 4,
+        "tool_errors": 0,
+        "self_corrections": 0,
+        "nudges": 1,
+        "stopped_by": "final_answer",
+        "latency_s": 98.1
+      },
+      {
+        "id": "H7",
+        "difficulty": "hard",
+        "incomplete": false,
+        "gold": "high_risk",
+        "pred": "high_risk",
+        "citations": [
+          "AI Act Art. 10",
+          "AI Act Art. 11",
+          "AI Act Art. 12",
+          "AI Act Art. 13",
+          "AI Act Art. 14",
+          "AI Act Art. 15",
+          "AI Act Art. 17",
+          "AI Act Art. 26",
+          "AI Act Art. 27",
+          "AI Act Art. 43",
+          "AI Act Art. 49",
+          "AI Act Art. 86",
+          "AI Act Art. 9",
+          "GDPR Art. 35",
+          "GDPR Art. 6",
+          "GDPR Art. 9"
+        ],
+        "gold_articles": [
+          "AI Act Art. 6"
+        ],
+        "pred_articles": [],
+        "gold_flags": [
+          "personal_data",
+          "dpia"
+        ],
+        "pred_flags": [
+          "dpia",
+          "personal_data",
+          "special_categories"
+        ],
+        "questions": 0,
+        "asked_before_conclusion": false,
+        "hallucinated_in_report": [],
+        "hallucinations_caught": 0,
+        "steps": 7,
+        "tool_calls": 5,
+        "tool_errors": 1,
+        "self_corrections": 1,
+        "nudges": 1,
+        "stopped_by": "final_answer",
+        "latency_s": 302.6
+      },
+      {
+        "id": "H8",
+        "difficulty": "hard",
+        "incomplete": false,
+        "gold": "high_risk",
+        "pred": "minimal_risk",
+        "citations": [
+          "AI Act Art. 4",
+          "AI Act Art. 50",
+          "AI Act Art. 95",
+          "GDPR Art. 6"
+        ],
+        "gold_articles": [
+          "AI Act Art. 6",
+          "AI Act Art. 50"
+        ],
+        "pred_articles": [
+          "AI Act Art. 50"
+        ],
+        "gold_flags": [
+          "personal_data",
+          "dpia"
+        ],
+        "pred_flags": [
+          "personal_data"
+        ],
+        "questions": 0,
+        "asked_before_conclusion": false,
+        "hallucinated_in_report": [],
+        "hallucinations_caught": 0,
+        "steps": 6,
+        "tool_calls": 5,
+        "tool_errors": 0,
+        "self_corrections": 0,
+        "nudges": 0,
+        "stopped_by": "final_answer",
+        "latency_s": 113.8
+      },
+      {
+        "id": "L1",
+        "difficulty": "easy",
+        "incomplete": false,
+        "gold": "limited_risk",
+        "pred": "limited_risk",
+        "citations": [
+          "AI Act Art. 50",
+          "GDPR Art. 22",
+          "GDPR Art. 5",
+          "GDPR Art. 6"
+        ],
+        "gold_articles": [
+          "AI Act Art. 50"
+        ],
+        "pred_articles": [
+          "AI Act Art. 50"
+        ],
+        "gold_flags": [],
+        "pred_flags": [
+          "automated_decision",
+          "personal_data"
+        ],
+        "questions": 0,
+        "asked_before_conclusion": false,
+        "hallucinated_in_report": [],
+        "hallucinations_caught": 0,
+        "steps": 7,
+        "tool_calls": 5,
+        "tool_errors": 1,
+        "self_corrections": 1,
+        "nudges": 1,
+        "stopped_by": "final_answer",
+        "latency_s": 80.9
+      },
+      {
+        "id": "L2",
+        "difficulty": "easy",
+        "incomplete": false,
+        "gold": "limited_risk",
+        "pred": "minimal_risk",
+        "citations": [
+          "AI Act Art. 50"
+        ],
+        "gold_articles": [
+          "AI Act Art. 50"
+        ],
+        "pred_articles": [
+          "AI Act Art. 50"
+        ],
+        "gold_flags": [],
+        "pred_flags": [],
+        "questions": 0,
+        "asked_before_conclusion": false,
+        "hallucinated_in_report": [],
+        "hallucinations_caught": 0,
+        "steps": 6,
+        "tool_calls": 4,
+        "tool_errors": 0,
+        "self_corrections": 0,
+        "nudges": 1,
+        "stopped_by": "final_answer",
+        "latency_s": 63.2
+      },
+      {
+        "id": "L3",
+        "difficulty": "medium",
+        "incomplete": false,
+        "gold": "limited_risk",
+        "pred": "minimal_risk",
+        "citations": [
+          "AI Act Art. 50",
+          "GDPR Art. 22",
+          "GDPR Art. 5",
+          "GDPR Art. 6"
+        ],
+        "gold_articles": [
+          "AI Act Art. 50"
+        ],
+        "pred_articles": [
+          "AI Act Art. 50"
+        ],
+        "gold_flags": [
+          "personal_data"
+        ],
+        "pred_flags": [
+          "automated_decision",
+          "personal_data"
+        ],
+        "questions": 0,
+        "asked_before_conclusion": false,
+        "hallucinated_in_report": [],
+        "hallucinations_caught": 0,
+        "steps": 8,
+        "tool_calls": 5,
+        "tool_errors": 1,
+        "self_corrections": 1,
+        "nudges": 2,
+        "stopped_by": "final_answer",
+        "latency_s": 144.5
+      },
+      {
+        "id": "L4",
+        "difficulty": "medium",
+        "incomplete": false,
+        "gold": "limited_risk",
+        "pred": "no_report",
+        "citations": [],
+        "gold_articles": [
+          "AI Act Art. 50"
+        ],
+        "pred_articles": [],
+        "gold_flags": [],
+        "pred_flags": [],
+        "questions": 0,
+        "asked_before_conclusion": false,
+        "hallucinated_in_report": [],
+        "hallucinations_caught": 0,
+        "steps": 8,
+        "tool_calls": 5,
+        "tool_errors": 0,
+        "self_corrections": 0,
+        "nudges": 2,
+        "stopped_by": "final_answer",
+        "latency_s": 119.2
+      },
+      {
+        "id": "L5",
+        "difficulty": "hard",
+        "incomplete": true,
+        "gold": "limited_risk",
+        "pred": "high_risk",
+        "citations": [
+          "AI Act Art. 10",
+          "AI Act Art. 11",
+          "AI Act Art. 12",
+          "AI Act Art. 13",
+          "AI Act Art. 14",
+          "AI Act Art. 15",
+          "AI Act Art. 17",
+          "AI Act Art. 26",
+          "AI Act Art. 27",
+          "AI Act Art. 43",
+          "AI Act Art. 49",
+          "AI Act Art. 86",
+          "AI Act Art. 9"
+        ],
+        "gold_articles": [
+          "AI Act Art. 50"
+        ],
+        "pred_articles": [],
+        "gold_flags": [],
+        "pred_flags": [],
+        "questions": 0,
+        "asked_before_conclusion": false,
+        "hallucinated_in_report": [],
+        "hallucinations_caught": 0,
+        "steps": 7,
+        "tool_calls": 5,
+        "tool_errors": 1,
+        "self_corrections": 1,
+        "nudges": 1,
+        "stopped_by": "final_answer",
+        "latency_s": 290.5
+      },
+      {
+        "id": "L6",
+        "difficulty": "hard",
+        "incomplete": false,
+        "gold": "limited_risk",
+        "pred": "minimal_risk",
+        "citations": [
+          "AI Act Art. 4",
+          "AI Act Art. 6",
+          "AI Act Art. 95",
+          "GDPR Art. 5"
+        ],
+        "gold_articles": [
+          "AI Act Art. 50"
+        ],
+        "pred_articles": [
+          "AI Act Art. 6"
+        ],
+        "gold_flags": [
+          "personal_data"
+        ],
+        "pred_flags": [
+          "personal_data"
+        ],
+        "questions": 0,
+        "asked_before_conclusion": false,
+        "hallucinated_in_report": [],
+        "hallucinations_caught": 0,
+        "steps": 6,
+        "tool_calls": 4,
+        "tool_errors": 0,
+        "self_corrections": 0,
+        "nudges": 1,
+        "stopped_by": "final_answer",
+        "latency_s": 79.5
+      },
+      {
+        "id": "M1",
+        "difficulty": "easy",
+        "incomplete": false,
+        "gold": "minimal_risk",
+        "pred": "minimal_risk",
+        "citations": [
+          "GDPR Art. 5",
+          "GDPR Art. 6",
+          "GDPR Art. 9"
+        ],
+        "gold_articles": [],
+        "pred_articles": [],
+        "gold_flags": [
+          "personal_data"
+        ],
+        "pred_flags": [
+          "personal_data",
+          "special_categories"
+        ],
+        "questions": 0,
+        "asked_before_conclusion": false,
+        "hallucinated_in_report": [],
+        "hallucinations_caught": 0,
+        "steps": 5,
+        "tool_calls": 4,
+        "tool_errors": 0,
+        "self_corrections": 0,
+        "nudges": 0,
+        "stopped_by": "final_answer",
+        "latency_s": 67.5
+      },
+      {
+        "id": "M2",
+        "difficulty": "easy",
+        "incomplete": false,
+        "gold": "minimal_risk",
+        "pred": "minimal_risk",
+        "citations": [
+          "AI Act Art. 50",
+          "GDPR Art. 5",
+          "GDPR Art. 6"
+        ],
+        "gold_articles": [],
+        "pred_articles": [
+          "AI Act Art. 50"
+        ],
+        "gold_flags": [],
+        "pred_flags": [
+          "personal_data"
+        ],
+        "questions": 0,
+        "asked_before_conclusion": false,
+        "hallucinated_in_report": [],
+        "hallucinations_caught": 0,
+        "steps": 6,
+        "tool_calls": 4,
+        "tool_errors": 0,
+        "self_corrections": 0,
+        "nudges": 1,
+        "stopped_by": "final_answer",
+        "latency_s": 65.5
+      },
+      {
+        "id": "M3",
+        "difficulty": "medium",
+        "incomplete": false,
+        "gold": "minimal_risk",
+        "pred": "minimal_risk",
+        "citations": [
+          "AI Act Art. 4",
+          "AI Act Art. 95"
+        ],
+        "gold_articles": [],
+        "pred_articles": [],
+        "gold_flags": [],
+        "pred_flags": [],
+        "questions": 0,
+        "asked_before_conclusion": false,
+        "hallucinated_in_report": [],
+        "hallucinations_caught": 0,
+        "steps": 8,
+        "tool_calls": 6,
+        "tool_errors": 0,
+        "self_corrections": 0,
+        "nudges": 1,
+        "stopped_by": "final_answer",
+        "latency_s": 70.2
+      },
+      {
+        "id": "M4",
+        "difficulty": "medium",
+        "incomplete": false,
+        "gold": "minimal_risk",
+        "pred": "minimal_risk",
+        "citations": [
+          "AI Act Art. 5",
+          "AI Act Art. 50",
+          "AI Act Art. 6"
+        ],
+        "gold_articles": [],
+        "pred_articles": [
+          "AI Act Art. 5",
+          "AI Act Art. 50",
+          "AI Act Art. 6"
+        ],
+        "gold_flags": [],
+        "pred_flags": [],
+        "questions": 0,
+        "asked_before_conclusion": false,
+        "hallucinated_in_report": [],
+        "hallucinations_caught": 0,
+        "steps": 6,
+        "tool_calls": 4,
+        "tool_errors": 0,
+        "self_corrections": 0,
+        "nudges": 1,
+        "stopped_by": "final_answer",
+        "latency_s": 65.0
+      },
+      {
+        "id": "M5",
+        "difficulty": "hard",
+        "incomplete": true,
+        "gold": "minimal_risk",
+        "pred": "high_risk",
+        "citations": [
+          "AI Act Art. 10",
+          "AI Act Art. 11",
+          "AI Act Art. 12",
+          "AI Act Art. 13",
+          "AI Act Art. 14",
+          "AI Act Art. 15",
+          "AI Act Art. 17",
+          "AI Act Art. 26",
+          "AI Act Art. 27",
+          "AI Act Art. 43",
+          "AI Act Art. 49",
+          "AI Act Art. 86",
+          "AI Act Art. 9",
+          "GDPR Art. 22",
+          "GDPR Art. 5",
+          "GDPR Art. 6",
+          "GDPR Art. 9"
+        ],
+        "gold_articles": [],
+        "pred_articles": [],
+        "gold_flags": [],
+        "pred_flags": [
+          "automated_decision",
+          "personal_data",
+          "special_categories"
+        ],
+        "questions": 0,
+        "asked_before_conclusion": false,
+        "hallucinated_in_report": [],
+        "hallucinations_caught": 0,
+        "steps": 6,
+        "tool_calls": 4,
+        "tool_errors": 0,
+        "self_corrections": 0,
+        "nudges": 1,
+        "stopped_by": "final_answer",
+        "latency_s": 179.2
+      },
+      {
+        "id": "M6",
+        "difficulty": "hard",
+        "incomplete": true,
+        "gold": "minimal_risk",
+        "pred": "limited_risk",
+        "citations": [
+          "AI Act Art. 4",
+          "AI Act Art. 50",
+          "AI Act Art. 95"
+        ],
+        "gold_articles": [],
+        "pred_articles": [
+          "AI Act Art. 50"
+        ],
+        "gold_flags": [
+          "personal_data"
+        ],
+        "pred_flags": [],
+        "questions": 0,
+        "asked_before_conclusion": false,
+        "hallucinated_in_report": [],
+        "hallucinations_caught": 0,
+        "steps": 8,
+        "tool_calls": 5,
+        "tool_errors": 0,
+        "self_corrections": 0,
+        "nudges": 2,
+        "stopped_by": "final_answer",
+        "latency_s": 111.4
+      }
+    ],
+    "v1": [
+      {
+        "id": "P1",
+        "difficulty": "easy",
+        "incomplete": false,
+        "gold": "prohibited",
+        "pred": "minimal_risk",
+        "citations": [
+          "AI Act Art. 50",
+          "GDPR Art. 22",
+          "GDPR Art. 5",
+          "GDPR Art. 6",
+          "GDPR Art. 9"
+        ],
+        "gold_articles": [
+          "AI Act Art. 5"
+        ],
+        "pred_articles": [
+          "AI Act Art. 50"
+        ],
+        "gold_flags": [
+          "personal_data",
+          "automated_decision",
+          "dpia"
+        ],
+        "pred_flags": [
+          "automated_decision",
+          "personal_data",
+          "special_categories"
+        ],
+        "questions": 0,
+        "asked_before_conclusion": false,
+        "hallucinated_in_report": [],
+        "hallucinations_caught": 0,
+        "steps": 6,
+        "tool_calls": 4,
+        "tool_errors": 0,
+        "self_corrections": 0,
+        "nudges": 1,
+        "stopped_by": "final_answer",
+        "latency_s": 87.3
+      },
+      {
+        "id": "P2",
+        "difficulty": "easy",
+        "incomplete": false,
+        "gold": "prohibited",
+        "pred": "high_risk",
+        "citations": [
+          "AI Act Art. 10",
+          "AI Act Art. 11",
+          "AI Act Art. 12",
+          "AI Act Art. 13",
+          "AI Act Art. 14",
+          "AI Act Art. 15",
+          "AI Act Art. 17",
+          "AI Act Art. 26",
+          "AI Act Art. 27",
+          "AI Act Art. 5",
+          "AI Act Art. 86",
+          "AI Act Art. 9",
+          "GDPR Art. 22",
+          "GDPR Art. 5",
+          "GDPR Art. 6",
+          "GDPR Art. 9"
+        ],
+        "gold_articles": [
+          "AI Act Art. 5"
+        ],
+        "pred_articles": [
+          "AI Act Art. 5"
+        ],
+        "gold_flags": [
+          "personal_data",
+          "dpia"
+        ],
+        "pred_flags": [
+          "automated_decision",
+          "personal_data",
+          "special_categories"
+        ],
+        "questions": 0,
+        "asked_before_conclusion": false,
+        "hallucinated_in_report": [],
+        "hallucinations_caught": 0,
+        "steps": 7,
+        "tool_calls": 5,
+        "tool_errors": 0,
+        "self_corrections": 0,
+        "nudges": 1,
+        "stopped_by": "final_answer",
+        "latency_s": 153.6
+      },
+      {
+        "id": "P3",
+        "difficulty": "medium",
+        "incomplete": false,
+        "gold": "prohibited",
+        "pred": "prohibited",
+        "citations": [
+          "AI Act Art. 5",
+          "AI Act Art. 99"
+        ],
+        "gold_articles": [
+          "AI Act Art. 5"
+        ],
+        "pred_articles": [
+          "AI Act Art. 5"
+        ],
+        "gold_flags": [
+          "personal_data",
+          "special_categories",
+          "dpia"
+        ],
+        "pred_flags": [],
+        "questions": 0,
+        "asked_before_conclusion": false,
+        "hallucinated_in_report": [],
+        "hallucinations_caught": 0,
+        "steps": 6,
+        "tool_calls": 4,
+        "tool_errors": 0,
+        "self_corrections": 0,
+        "nudges": 1,
+        "stopped_by": "final_answer",
+        "latency_s": 63.6
+      },
+      {
+        "id": "P4",
+        "difficulty": "medium",
+        "incomplete": false,
+        "gold": "prohibited",
+        "pred": "prohibited",
+        "citations": [
+          "AI Act Art. 5",
+          "AI Act Art. 99"
+        ],
+        "gold_articles": [
+          "AI Act Art. 5"
+        ],
+        "pred_articles": [
+          "AI Act Art. 5"
+        ],
+        "gold_flags": [
+          "personal_data",
+          "dpia"
+        ],
+        "pred_flags": [],
+        "questions": 0,
+        "asked_before_conclusion": false,
+        "hallucinated_in_report": [],
+        "hallucinations_caught": 0,
+        "steps": 6,
+        "tool_calls": 4,
+        "tool_errors": 0,
+        "self_corrections": 0,
+        "nudges": 1,
+        "stopped_by": "final_answer",
+        "latency_s": 62.2
+      },
+      {
+        "id": "P5",
+        "difficulty": "hard",
+        "incomplete": true,
+        "gold": "prohibited",
+        "pred": "limited_risk",
+        "citations": [
+          "GDPR Art. 5",
+          "GDPR Art. 6"
+        ],
+        "gold_articles": [
+          "AI Act Art. 5"
+        ],
+        "pred_articles": [],
+        "gold_flags": [
+          "personal_data"
+        ],
+        "pred_flags": [
+          "personal_data"
+        ],
+        "questions": 0,
+        "asked_before_conclusion": false,
+        "hallucinated_in_report": [],
+        "hallucinations_caught": 1,
+        "steps": 6,
+        "tool_calls": 4,
+        "tool_errors": 1,
+        "self_corrections": 1,
+        "nudges": 1,
+        "stopped_by": "final_answer",
+        "latency_s": 135.8
+      },
+      {
+        "id": "P6",
+        "difficulty": "hard",
+        "incomplete": false,
+        "gold": "prohibited",
+        "pred": "high_risk",
+        "citations": [
+          "AI Act Art. 5",
+          "AI Act Art. 6",
+          "GDPR Art. 22",
+          "GDPR Art. 9"
+        ],
+        "gold_articles": [
+          "AI Act Art. 5"
+        ],
+        "pred_articles": [
+          "AI Act Art. 5",
+          "AI Act Art. 6"
+        ],
+        "gold_flags": [
+          "personal_data",
+          "special_categories",
+          "dpia"
+        ],
+        "pred_flags": [
+          "automated_decision",
+          "special_categories"
+        ],
+        "questions": 0,
+        "asked_before_conclusion": false,
+        "hallucinated_in_report": [],
+        "hallucinations_caught": 0,
+        "steps": 7,
+        "tool_calls": 5,
+        "tool_errors": 1,
+        "self_corrections": 1,
+        "nudges": 1,
+        "stopped_by": "final_answer",
+        "latency_s": 101.9
+      },
+      {
+        "id": "H1",
+        "difficulty": "easy",
+        "incomplete": false,
+        "gold": "high_risk",
+        "pred": "no_report",
+        "citations": [],
+        "gold_articles": [
+          "AI Act Art. 6"
+        ],
+        "pred_articles": [],
+        "gold_flags": [
+          "personal_data",
+          "automated_decision",
+          "dpia"
+        ],
+        "pred_flags": [],
+        "questions": 0,
+        "asked_before_conclusion": false,
+        "hallucinated_in_report": [],
+        "hallucinations_caught": 0,
+        "steps": 7,
+        "tool_calls": 4,
+        "tool_errors": 0,
+        "self_corrections": 0,
+        "nudges": 2,
+        "stopped_by": "final_answer",
+        "latency_s": 267.4
+      },
+      {
+        "id": "H2",
+        "difficulty": "easy",
+        "incomplete": false,
+        "gold": "high_risk",
+        "pred": "high_risk",
+        "citations": [
+          "AI Act Art. 10",
+          "AI Act Art. 11",
+          "AI Act Art. 12",
+          "AI Act Art. 13",
+          "AI Act Art. 14",
+          "AI Act Art. 15",
+          "AI Act Art. 17",
+          "AI Act Art. 26",
+          "AI Act Art. 27",
+          "AI Act Art. 4",
+          "AI Act Art. 43",
+          "AI Act Art. 49",
+          "AI Act Art. 6",
+          "AI Act Art. 86",
+          "AI Act Art. 9",
+          "GDPR Art. 22",
+          "GDPR Art. 5",
+          "GDPR Art. 9"
+        ],
+        "gold_articles": [
+          "AI Act Art. 6"
+        ],
+        "pred_articles": [
+          "AI Act Art. 6"
+        ],
+        "gold_flags": [
+          "personal_data",
+          "automated_decision"
+        ],
+        "pred_flags": [
+          "automated_decision",
+          "personal_data",
+          "special_categories"
+        ],
+        "questions": 0,
+        "asked_before_conclusion": false,
+        "hallucinated_in_report": [],
+        "hallucinations_caught": 0,
+        "steps": 6,
+        "tool_calls": 4,
+        "tool_errors": 0,
+        "self_corrections": 0,
+        "nudges": 1,
+        "stopped_by": "final_answer",
+        "latency_s": 185.3
+      },
+      {
+        "id": "H3",
+        "difficulty": "medium",
+        "incomplete": false,
+        "gold": "high_risk",
+        "pred": "high_risk",
+        "citations": [
+          "AI Act Art. 10",
+          "AI Act Art. 11",
+          "AI Act Art. 12",
+          "AI Act Art. 13",
+          "AI Act Art. 14",
+          "AI Act Art. 15",
+          "AI Act Art. 17",
+          "AI Act Art. 26",
+          "AI Act Art. 27",
+          "AI Act Art. 4",
+          "AI Act Art. 43",
+          "AI Act Art. 49",
+          "AI Act Art. 6",
+          "AI Act Art. 86",
+          "AI Act Art. 9",
+          "GDPR Art. 5"
+        ],
+        "gold_articles": [
+          "AI Act Art. 6"
+        ],
+        "pred_articles": [
+          "AI Act Art. 6"
+        ],
+        "gold_flags": [
+          "personal_data",
+          "automated_decision",
+          "dpia"
+        ],
+        "pred_flags": [
+          "personal_data"
+        ],
+        "questions": 0,
+        "asked_before_conclusion": false,
+        "hallucinated_in_report": [],
+        "hallucinations_caught": 0,
+        "steps": 6,
+        "tool_calls": 4,
+        "tool_errors": 0,
+        "self_corrections": 0,
+        "nudges": 1,
+        "stopped_by": "final_answer",
+        "latency_s": 218.0
+      },
+      {
+        "id": "H4",
+        "difficulty": "medium",
+        "incomplete": false,
+        "gold": "high_risk",
+        "pred": "high_risk",
+        "citations": [
+          "AI Act Art. 10",
+          "AI Act Art. 11",
+          "AI Act Art. 12",
+          "AI Act Art. 13",
+          "AI Act Art. 14",
+          "AI Act Art. 15",
+          "AI Act Art. 17",
+          "AI Act Art. 26",
+          "AI Act Art. 27",
+          "AI Act Art. 43",
+          "AI Act Art. 49",
+          "AI Act Art. 6",
+          "AI Act Art. 86",
+          "AI Act Art. 9",
+          "GDPR Art. 5",
+          "GDPR Art. 6"
+        ],
+        "gold_articles": [
+          "AI Act Art. 6"
+        ],
+        "pred_articles": [
+          "AI Act Art. 6"
+        ],
+        "gold_flags": [
+          "personal_data",
+          "automated_decision",
+          "dpia"
+        ],
+        "pred_flags": [
+          "personal_data"
+        ],
+        "questions": 0,
+        "asked_before_conclusion": false,
+        "hallucinated_in_report": [],
+        "hallucinations_caught": 0,
+        "steps": 5,
+        "tool_calls": 4,
+        "tool_errors": 0,
+        "self_corrections": 0,
+        "nudges": 0,
+        "stopped_by": "final_answer",
+        "latency_s": 141.7
+      },
+      {
+        "id": "H5",
+        "difficulty": "hard",
+        "incomplete": true,
+        "gold": "high_risk",
+        "pred": "high_risk",
+        "citations": [
+          "AI Act Art. 10",
+          "AI Act Art. 11",
+          "AI Act Art. 12",
+          "AI Act Art. 13",
+          "AI Act Art. 14",
+          "AI Act Art. 15",
+          "AI Act Art. 17",
+          "AI Act Art. 26",
+          "AI Act Art. 27",
+          "AI Act Art. 4",
+          "AI Act Art. 43",
+          "AI Act Art. 49",
+          "AI Act Art. 6",
+          "AI Act Art. 86",
+          "AI Act Art. 9",
+          "GDPR Art. 22",
+          "GDPR Art. 5",
+          "GDPR Art. 9"
+        ],
+        "gold_articles": [
+          "AI Act Art. 6"
+        ],
+        "pred_articles": [
+          "AI Act Art. 6"
+        ],
+        "gold_flags": [
+          "personal_data",
+          "dpia"
+        ],
+        "pred_flags": [
+          "automated_decision",
+          "personal_data",
+          "special_categories"
+        ],
+        "questions": 0,
+        "asked_before_conclusion": false,
+        "hallucinated_in_report": [],
+        "hallucinations_caught": 0,
+        "steps": 7,
+        "tool_calls": 5,
+        "tool_errors": 1,
+        "self_corrections": 1,
+        "nudges": 1,
+        "stopped_by": "final_answer",
+        "latency_s": 181.8
+      },
+      {
+        "id": "H6",
+        "difficulty": "hard",
+        "incomplete": true,
+        "gold": "high_risk",
+        "pred": "minimal_risk",
+        "citations": [
+          "AI Act Art. 4",
+          "AI Act Art. 95",
+          "GDPR Art. 22",
+          "GDPR Art. 5",
+          "GDPR Art. 6",
+          "GDPR Art. 9"
+        ],
+        "gold_articles": [
+          "AI Act Art. 6"
+        ],
+        "pred_articles": [],
+        "gold_flags": [
+          "personal_data",
+          "special_categories",
+          "dpia"
+        ],
+        "pred_flags": [
+          "automated_decision",
+          "personal_data",
+          "special_categories"
+        ],
+        "questions": 0,
+        "asked_before_conclusion": false,
+        "hallucinated_in_report": [],
+        "hallucinations_caught": 0,
+        "steps": 6,
+        "tool_calls": 4,
+        "tool_errors": 0,
+        "self_corrections": 0,
+        "nudges": 1,
+        "stopped_by": "final_answer",
+        "latency_s": 142.6
+      },
+      {
+        "id": "H7",
+        "difficulty": "hard",
+        "incomplete": false,
+        "gold": "high_risk",
+        "pred": "high_risk",
+        "citations": [
+          "AI Act Art. 10",
+          "AI Act Art. 11",
+          "AI Act Art. 12",
+          "AI Act Art. 13",
+          "AI Act Art. 14",
+          "AI Act Art. 15",
+          "AI Act Art. 17",
+          "AI Act Art. 26",
+          "AI Act Art. 27",
+          "AI Act Art. 43",
+          "AI Act Art. 49",
+          "AI Act Art. 86",
+          "AI Act Art. 9",
+          "GDPR Art. 35",
+          "GDPR Art. 6",
+          "GDPR Art. 9"
+        ],
+        "gold_articles": [
+          "AI Act Art. 6"
+        ],
+        "pred_articles": [],
+        "gold_flags": [
+          "personal_data",
+          "dpia"
+        ],
+        "pred_flags": [
+          "dpia",
+          "personal_data",
+          "special_categories"
+        ],
+        "questions": 0,
+        "asked_before_conclusion": false,
+        "hallucinated_in_report": [],
+        "hallucinations_caught": 0,
+        "steps": 7,
+        "tool_calls": 5,
+        "tool_errors": 1,
+        "self_corrections": 1,
+        "nudges": 1,
+        "stopped_by": "final_answer",
+        "latency_s": 416.1
+      },
+      {
+        "id": "H8",
+        "difficulty": "hard",
+        "incomplete": false,
+        "gold": "high_risk",
+        "pred": "minimal_risk",
+        "citations": [
+          "AI Act Art. 4",
+          "AI Act Art. 50",
+          "AI Act Art. 95",
+          "GDPR Art. 6"
+        ],
+        "gold_articles": [
+          "AI Act Art. 6",
+          "AI Act Art. 50"
+        ],
+        "pred_articles": [
+          "AI Act Art. 50"
+        ],
+        "gold_flags": [
+          "personal_data",
+          "dpia"
+        ],
+        "pred_flags": [
+          "personal_data"
+        ],
+        "questions": 0,
+        "asked_before_conclusion": false,
+        "hallucinated_in_report": [],
+        "hallucinations_caught": 0,
+        "steps": 6,
+        "tool_calls": 5,
+        "tool_errors": 0,
+        "self_corrections": 0,
+        "nudges": 0,
+        "stopped_by": "final_answer",
+        "latency_s": 164.4
+      },
+      {
+        "id": "L1",
+        "difficulty": "easy",
+        "incomplete": false,
+        "gold": "limited_risk",
+        "pred": "limited_risk",
+        "citations": [
+          "AI Act Art. 50",
+          "GDPR Art. 22",
+          "GDPR Art. 5",
+          "GDPR Art. 6"
+        ],
+        "gold_articles": [
+          "AI Act Art. 50"
+        ],
+        "pred_articles": [
+          "AI Act Art. 50"
+        ],
+        "gold_flags": [],
+        "pred_flags": [
+          "automated_decision",
+          "personal_data"
+        ],
+        "questions": 0,
+        "asked_before_conclusion": false,
+        "hallucinated_in_report": [],
+        "hallucinations_caught": 0,
+        "steps": 7,
+        "tool_calls": 5,
+        "tool_errors": 1,
+        "self_corrections": 1,
+        "nudges": 1,
+        "stopped_by": "final_answer",
+        "latency_s": 116.6
+      },
+      {
+        "id": "L2",
+        "difficulty": "easy",
+        "incomplete": false,
+        "gold": "limited_risk",
+        "pred": "minimal_risk",
+        "citations": [
+          "AI Act Art. 50"
+        ],
+        "gold_articles": [
+          "AI Act Art. 50"
+        ],
+        "pred_articles": [
+          "AI Act Art. 50"
+        ],
+        "gold_flags": [],
+        "pred_flags": [],
+        "questions": 0,
+        "asked_before_conclusion": false,
+        "hallucinated_in_report": [],
+        "hallucinations_caught": 0,
+        "steps": 6,
+        "tool_calls": 4,
+        "tool_errors": 0,
+        "self_corrections": 0,
+        "nudges": 1,
+        "stopped_by": "final_answer",
+        "latency_s": 98.8
+      },
+      {
+        "id": "L3",
+        "difficulty": "medium",
+        "incomplete": false,
+        "gold": "limited_risk",
+        "pred": "minimal_risk",
+        "citations": [
+          "AI Act Art. 50",
+          "GDPR Art. 22",
+          "GDPR Art. 5",
+          "GDPR Art. 6"
+        ],
+        "gold_articles": [
+          "AI Act Art. 50"
+        ],
+        "pred_articles": [
+          "AI Act Art. 50"
+        ],
+        "gold_flags": [
+          "personal_data"
+        ],
+        "pred_flags": [
+          "automated_decision",
+          "personal_data"
+        ],
+        "questions": 0,
+        "asked_before_conclusion": false,
+        "hallucinated_in_report": [],
+        "hallucinations_caught": 0,
+        "steps": 8,
+        "tool_calls": 5,
+        "tool_errors": 1,
+        "self_corrections": 1,
+        "nudges": 2,
+        "stopped_by": "final_answer",
+        "latency_s": 235.1
+      },
+      {
+        "id": "L4",
+        "difficulty": "medium",
+        "incomplete": false,
+        "gold": "limited_risk",
+        "pred": "no_report",
+        "citations": [],
+        "gold_articles": [
+          "AI Act Art. 50"
+        ],
+        "pred_articles": [],
+        "gold_flags": [],
+        "pred_flags": [],
+        "questions": 0,
+        "asked_before_conclusion": false,
+        "hallucinated_in_report": [],
+        "hallucinations_caught": 0,
+        "steps": 8,
+        "tool_calls": 5,
+        "tool_errors": 0,
+        "self_corrections": 0,
+        "nudges": 2,
+        "stopped_by": "final_answer",
+        "latency_s": 199.8
+      },
+      {
+        "id": "L5",
+        "difficulty": "hard",
+        "incomplete": true,
+        "gold": "limited_risk",
+        "pred": "high_risk",
+        "citations": [
+          "AI Act Art. 10",
+          "AI Act Art. 11",
+          "AI Act Art. 12",
+          "AI Act Art. 13",
+          "AI Act Art. 14",
+          "AI Act Art. 15",
+          "AI Act Art. 17",
+          "AI Act Art. 26",
+          "AI Act Art. 27",
+          "AI Act Art. 43",
+          "AI Act Art. 49",
+          "AI Act Art. 86",
+          "AI Act Art. 9"
+        ],
+        "gold_articles": [
+          "AI Act Art. 50"
+        ],
+        "pred_articles": [],
+        "gold_flags": [],
+        "pred_flags": [],
+        "questions": 0,
+        "asked_before_conclusion": false,
+        "hallucinated_in_report": [],
+        "hallucinations_caught": 0,
+        "steps": 7,
+        "tool_calls": 5,
+        "tool_errors": 1,
+        "self_corrections": 1,
+        "nudges": 1,
+        "stopped_by": "final_answer",
+        "latency_s": 510.2
+      },
+      {
+        "id": "L6",
+        "difficulty": "hard",
+        "incomplete": false,
+        "gold": "limited_risk",
+        "pred": "minimal_risk",
+        "citations": [
+          "AI Act Art. 4",
+          "AI Act Art. 6",
+          "AI Act Art. 95",
+          "GDPR Art. 5"
+        ],
+        "gold_articles": [
+          "AI Act Art. 50"
+        ],
+        "pred_articles": [
+          "AI Act Art. 6"
+        ],
+        "gold_flags": [
+          "personal_data"
+        ],
+        "pred_flags": [
+          "personal_data"
+        ],
+        "questions": 0,
+        "asked_before_conclusion": false,
+        "hallucinated_in_report": [],
+        "hallucinations_caught": 0,
+        "steps": 6,
+        "tool_calls": 4,
+        "tool_errors": 0,
+        "self_corrections": 0,
+        "nudges": 1,
+        "stopped_by": "final_answer",
+        "latency_s": 140.3
+      },
+      {
+        "id": "M1",
+        "difficulty": "easy",
+        "incomplete": false,
+        "gold": "minimal_risk",
+        "pred": "minimal_risk",
+        "citations": [
+          "GDPR Art. 5",
+          "GDPR Art. 6",
+          "GDPR Art. 9"
+        ],
+        "gold_articles": [],
+        "pred_articles": [],
+        "gold_flags": [
+          "personal_data"
+        ],
+        "pred_flags": [
+          "personal_data",
+          "special_categories"
+        ],
+        "questions": 0,
+        "asked_before_conclusion": false,
+        "hallucinated_in_report": [],
+        "hallucinations_caught": 0,
+        "steps": 5,
+        "tool_calls": 4,
+        "tool_errors": 0,
+        "self_corrections": 0,
+        "nudges": 0,
+        "stopped_by": "final_answer",
+        "latency_s": 115.6
+      },
+      {
+        "id": "M2",
+        "difficulty": "easy",
+        "incomplete": false,
+        "gold": "minimal_risk",
+        "pred": "minimal_risk",
+        "citations": [
+          "AI Act Art. 50",
+          "GDPR Art. 5",
+          "GDPR Art. 6"
+        ],
+        "gold_articles": [],
+        "pred_articles": [
+          "AI Act Art. 50"
+        ],
+        "gold_flags": [],
+        "pred_flags": [
+          "personal_data"
+        ],
+        "questions": 0,
+        "asked_before_conclusion": false,
+        "hallucinated_in_report": [],
+        "hallucinations_caught": 0,
+        "steps": 6,
+        "tool_calls": 4,
+        "tool_errors": 0,
+        "self_corrections": 0,
+        "nudges": 1,
+        "stopped_by": "final_answer",
+        "latency_s": 110.7
+      },
+      {
+        "id": "M3",
+        "difficulty": "medium",
+        "incomplete": false,
+        "gold": "minimal_risk",
+        "pred": "minimal_risk",
+        "citations": [
+          "AI Act Art. 4",
+          "AI Act Art. 95"
+        ],
+        "gold_articles": [],
+        "pred_articles": [],
+        "gold_flags": [],
+        "pred_flags": [],
+        "questions": 0,
+        "asked_before_conclusion": false,
+        "hallucinated_in_report": [],
+        "hallucinations_caught": 0,
+        "steps": 8,
+        "tool_calls": 6,
+        "tool_errors": 0,
+        "self_corrections": 0,
+        "nudges": 1,
+        "stopped_by": "final_answer",
+        "latency_s": 117.6
+      },
+      {
+        "id": "M4",
+        "difficulty": "medium",
+        "incomplete": false,
+        "gold": "minimal_risk",
+        "pred": "minimal_risk",
+        "citations": [
+          "AI Act Art. 5",
+          "AI Act Art. 50",
+          "AI Act Art. 6"
+        ],
+        "gold_articles": [],
+        "pred_articles": [
+          "AI Act Art. 5",
+          "AI Act Art. 50",
+          "AI Act Art. 6"
+        ],
+        "gold_flags": [],
+        "pred_flags": [],
+        "questions": 0,
+        "asked_before_conclusion": false,
+        "hallucinated_in_report": [],
+        "hallucinations_caught": 0,
+        "steps": 6,
+        "tool_calls": 4,
+        "tool_errors": 0,
+        "self_corrections": 0,
+        "nudges": 1,
+        "stopped_by": "final_answer",
+        "latency_s": 106.1
+      },
+      {
+        "id": "M5",
+        "difficulty": "hard",
+        "incomplete": true,
+        "gold": "minimal_risk",
+        "pred": "high_risk",
+        "citations": [
+          "AI Act Art. 10",
+          "AI Act Art. 11",
+          "AI Act Art. 12",
+          "AI Act Art. 13",
+          "AI Act Art. 14",
+          "AI Act Art. 15",
+          "AI Act Art. 17",
+          "AI Act Art. 26",
+          "AI Act Art. 27",
+          "AI Act Art. 43",
+          "AI Act Art. 49",
+          "AI Act Art. 86",
+          "AI Act Art. 9",
+          "GDPR Art. 22",
+          "GDPR Art. 5",
+          "GDPR Art. 6",
+          "GDPR Art. 9"
+        ],
+        "gold_articles": [],
+        "pred_articles": [],
+        "gold_flags": [],
+        "pred_flags": [
+          "automated_decision",
+          "personal_data",
+          "special_categories"
+        ],
+        "questions": 0,
+        "asked_before_conclusion": false,
+        "hallucinated_in_report": [],
+        "hallucinations_caught": 0,
+        "steps": 6,
+        "tool_calls": 4,
+        "tool_errors": 0,
+        "self_corrections": 0,
+        "nudges": 1,
+        "stopped_by": "final_answer",
+        "latency_s": 303.8
+      },
+      {
+        "id": "M6",
+        "difficulty": "hard",
+        "incomplete": true,
+        "gold": "minimal_risk",
+        "pred": "limited_risk",
+        "citations": [
+          "AI Act Art. 4",
+          "AI Act Art. 50",
+          "AI Act Art. 95"
+        ],
+        "gold_articles": [],
+        "pred_articles": [
+          "AI Act Art. 50"
+        ],
+        "gold_flags": [
+          "personal_data"
+        ],
+        "pred_flags": [],
+        "questions": 0,
+        "asked_before_conclusion": false,
+        "hallucinated_in_report": [],
+        "hallucinations_caught": 0,
+        "steps": 8,
+        "tool_calls": 5,
+        "tool_errors": 0,
+        "self_corrections": 0,
+        "nudges": 2,
+        "stopped_by": "final_answer",
+        "latency_s": 172.2
+      }
+    ]
+  },
+  "summary": {
+    "v0": {
+      "n_cases": 26,
+      "accuracy": 0.46153846153846156,
+      "macro_f1": 0.4526143790849674,
+      "confusion_matrix": {
+        "labels": [
+          "prohibited",
+          "high_risk",
+          "limited_risk",
+          "minimal_risk",
+          "no_report"
+        ],
+        "matrix": [
+          [
+            2,
+            2,
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            5,
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            1,
+            1,
+            3,
+            1
+          ],
+          [
+            0,
+            1,
+            1,
+            4,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      "reports_saved": 24,
+      "article_precision": 0.6,
+      "article_recall": 0.5714285714285714,
+      "gdpr_flag_precision": 0.5142857142857142,
+      "gdpr_flag_recall": 0.47368421052631576,
+      "asked_on_incomplete": "0/6",
+      "no_question_on_complete": "20/20",
+      "hallucinated_citations_in_reports": 0,
+      "hallucinations_caught_by_guardrails": 1,
+      "avg_steps": 6.5,
+      "tool_error_rate": 0.0603448275862069,
+      "self_corrections": 7,
+      "nudges": 27,
+      "max_steps_reached": 0,
+      "avg_latency_s": 124.7423076923077,
+      "crashed_runs": 0
+    },
+    "v1": {
+      "n_cases": 26,
+      "accuracy": 0.46153846153846156,
+      "macro_f1": 0.4526143790849674,
+      "confusion_matrix": {
+        "labels": [
+          "prohibited",
+          "high_risk",
+          "limited_risk",
+          "minimal_risk",
+          "no_report"
+        ],
+        "matrix": [
+          [
+            2,
+            2,
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            5,
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            1,
+            1,
+            3,
+            1
+          ],
+          [
+            0,
+            1,
+            1,
+            4,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      "reports_saved": 24,
+      "article_precision": 0.6,
+      "article_recall": 0.5714285714285714,
+      "gdpr_flag_precision": 0.5142857142857142,
+      "gdpr_flag_recall": 0.47368421052631576,
+      "asked_on_incomplete": "0/6",
+      "no_question_on_complete": "20/20",
+      "hallucinated_citations_in_reports": 0,
+      "hallucinations_caught_by_guardrails": 1,
+      "avg_steps": 6.5,
+      "tool_error_rate": 0.0603448275862069,
+      "self_corrections": 7,
+      "nudges": 27,
+      "max_steps_reached": 0,
+      "avg_latency_s": 174.94230769230768,
+      "crashed_runs": 0
+    }
+  },
+  "markdown": "| Metric | v0 | v1 |\n|---|---|---|\n| n_cases | 26 | 26 |\n| accuracy | 0.46 | 0.46 |\n| macro_f1 | 0.45 | 0.45 |\n| reports_saved | 24 | 24 |\n| article_precision | 0.60 | 0.60 |\n| article_recall | 0.57 | 0.57 |\n| gdpr_flag_precision | 0.51 | 0.51 |\n| gdpr_flag_recall | 0.47 | 0.47 |\n| asked_on_incomplete | 0/6 | 0/6 |\n| no_question_on_complete | 20/20 | 20/20 |\n| hallucinated_citations_in_reports | 0 | 0 |\n| hallucinations_caught_by_guardrails | 1 | 1 |\n| avg_steps | 6.50 | 6.50 |\n| tool_error_rate | 0.06 | 0.06 |\n| self_corrections | 7 | 7 |\n| nudges | 27 | 27 |\n| max_steps_reached | 0 | 0 |\n| avg_latency_s | 124.74 | 174.94 |\n| crashed_runs | 0 | 0 |\n\n**Confusion matrix \u2014 v0** (rows = gold, columns = predicted)\n\n| gold \\ pred | prohibited | high_risk | limited_risk | minimal_risk | no_report |\n|---|---|---|---|---|---|\n| prohibited | 2 | 2 | 1 | 1 | 0 |\n| high_risk | 0 | 5 | 0 | 2 | 1 |\n| limited_risk | 0 | 1 | 1 | 3 | 1 |\n| minimal_risk | 0 | 1 | 1 | 4 | 0 |\n\n**Confusion matrix \u2014 v1** (rows = gold, columns = predicted)\n\n| gold \\ pred | prohibited | high_risk | limited_risk | minimal_risk | no_report |\n|---|---|---|---|---|---|\n| prohibited | 2 | 2 | 1 | 1 | 0 |\n| high_risk | 0 | 5 | 0 | 2 | 1 |\n| limited_risk | 0 | 1 | 1 | 3 | 1 |\n| minimal_risk | 0 | 1 | 1 | 4 | 0 |"
+}
