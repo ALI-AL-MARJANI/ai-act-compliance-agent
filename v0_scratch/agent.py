@@ -163,19 +163,22 @@ def execute_tool(name: str, arguments, approve_fn) -> dict:
         return {"error": f"Invalid arguments for {name}: {e}"}
 
 
+def wrap_description(description: str) -> str:
+    """Input treated as DATA: wrap it in tags, and remove any tag the user may
+    have written to "escape" from the data block (prompt injection)."""
+    clean = description.replace("<system_description>", "").replace("</system_description>", "")
+    return f"Assess this AI system.\n<system_description>\n{clean}\n</system_description>"
+
+
 # ---------------------------------------------------------------------------
 # 5. The agent loop.
 # ---------------------------------------------------------------------------
 def run_agent(description: str, approve_fn=approve_in_terminal, verbose: bool = True) -> dict:
     """Assess one AI system. Returns a trace that the evaluation script can analyse."""
     ct.reset_assessment()
-
-    # Input treated as DATA: we wrap it in tags, and remove any closing tag the
-    # user may have written to "escape" from the data block (prompt injection).
-    clean = description.replace("<system_description>", "").replace("</system_description>", "")
     messages = [
         {"role": "system", "content": SYSTEM_PROMPT},
-        {"role": "user", "content": f"Assess this AI system.\n<system_description>\n{clean}\n</system_description>"},
+        {"role": "user", "content": wrap_description(description)},
     ]
 
     trace = {"tool_calls": [], "steps": 0, "nudges": 0, "final_answer": None, "report": None,
